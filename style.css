@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+header{  /*cabeçalho*/
+    position: fixed; /*posição fixada*/
+    top: 0;  
+    left: 0; 
+    width: 100%;  /*100% da tela horizontal*/
+    padding: 20px 100px; /*tamanho que ocupa*/
+    background: red;
+    display: flex; /* como um ítem será posicionado para no espaço disponível dentro de seu container*/
+    justify-content: space-between; /*O primeiro item é nivelado com a borda de início principal, e o último item é nivelado com a borda de main-end (um em cada lado do counteiner)*/
+    align-items: center; /*alinha o elemento ao centro do seu countainer*/
+    z-index: 99; /* 99 faz com que esse elemento fique proximo da tela. z-index: 99;*/
+}
+
+.logo{
+    font-size: 2em; /*font-size: 2em;   (2em = 32px)*/
+    color: blueviolet;
+    user-select: none; /*faz com que o usuario não consiga selecionar texto nenhum desse elemento*/
+}
