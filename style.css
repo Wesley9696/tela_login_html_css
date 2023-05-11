@@ -26,3 +26,12 @@ header{  /*cabeçalho*/
     color: blueviolet;
     user-select: none; /*faz com que o usuario não consiga selecionar texto nenhum desse elemento*/
 }
+
+.navigation {
+    position: relative;
+    font-size: 1.1em;
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
