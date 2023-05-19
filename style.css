@@ -8,6 +8,14 @@
     font-family: 'Jost', sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url();
+}
+
 header{  /*cabeçalho*/
     position: fixed; /*posição fixada*/
     top: 0;  
@@ -27,11 +35,51 @@ header{  /*cabeçalho*/
     user-select: none; /*faz com que o usuario não consiga selecionar texto nenhum desse elemento*/
 }
 
-.navigation {
-    position: relative;
-    font-size: 1.1em;
-    color: blueviolet;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
+.navigation a {
+    position: relative; /* deixa o elemento limitado dentro do elemento pai, nesse caso ele ficara limitado dentro do elemento com classe navigation*/
+    font-size: 1.1em; /*tamanho da fonte*/
+    color: blueviolet; /*cor do elemento*/
+    text-decoration: none; /*sem nenhum tipo de linha/sublinhado no texto */
+    font-weight: 500; /*igual a negrito, quanto maior o número mais negrito na fonte*/
+    margin-left: 40px; /*da margem ao elemento, ele deixar separado em 40px*/
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none; /*serve para pintar a margem da borda*/
+    border-radius: 6px; /*deixa a quina/borda aredondada*/
+    cursor: pointer; /* estiliza o cursor*/
+    font-size: 1.1em; /* tamanho da fonte deste elemento*/
+    color: #fff;
+    font-weight: 500;/*igual a negrito, quanto maior o número mais negrito na fonte*/
+    margin-left: 40px;/*da margem ao elemento, ele deixar separado em 40px*/
+    transition: .5s;
+}
+
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
 }
