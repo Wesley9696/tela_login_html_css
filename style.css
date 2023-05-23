@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Wix+Madefor+Display:wght@400;500;600&family=Wix+Madefor+Text:wght@400;500;600&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
 }
 
 body {
@@ -13,35 +14,51 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(img/fundo_ball_colors.jpg);
+    background: url(img/fundo_ball_colors.jpg);
 }
 
-header{  /*cabeçalho*/
-    position: fixed; /*posição fixada*/
-    top: 0;  
-    left: 0; 
-    width: 100%;  /*100% da tela horizontal*/
-    padding: 20px 100px; /*tamanho que ocupa*/
+header {
+    /*cabeçalho*/
+    position: fixed;
+    /*posição fixada*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*100% da tela horizontal*/
+    padding: 20px 100px;
+    /*tamanho que ocupa*/
     background: red;
-    display: flex; /* como um ítem será posicionado para no espaço disponível dentro de seu container*/
-    justify-content: space-between; /*O primeiro item é nivelado com a borda de início principal, e o último item é nivelado com a borda de main-end (um em cada lado do counteiner)*/
-    align-items: center; /*alinha o elemento ao centro do seu countainer*/
-    z-index: 99; /* 99 faz com que esse elemento fique proximo da tela. z-index: 99;*/
+    display: flex;
+    /* como um ítem será posicionado para no espaço disponível dentro de seu container*/
+    justify-content: space-between;
+    /*O primeiro item é nivelado com a borda de início principal, e o último item é nivelado com a borda de main-end (um em cada lado do counteiner)*/
+    align-items: center;
+    /*alinha o elemento ao centro do seu countainer*/
+    z-index: 99;
+    /* 99 faz com que esse elemento fique proximo da tela. z-index: 99;*/
 }
 
-.logo{
-    font-size: 2em; /*font-size: 2em;   (2em = 32px)*/
+.logo {
+    font-size: 2em;
+    /*font-size: 2em;   (2em = 32px)*/
     color: blueviolet;
-    user-select: none; /*faz com que o usuario não consiga selecionar texto nenhum desse elemento*/
+    user-select: none;
+    /*faz com que o usuario não consiga selecionar texto nenhum desse elemento*/
 }
 
 .navigation a {
-    position: relative; /* deixa o elemento limitado dentro do elemento pai, nesse caso ele ficara limitado dentro do elemento com classe navigation*/
-    font-size: 1.1em; /*tamanho da fonte*/
-    color: blueviolet; /*cor do elemento*/
-    text-decoration: none; /*sem nenhum tipo de linha/sublinhado no texto */
-    font-weight: 500; /*igual a negrito, quanto maior o número mais negrito na fonte*/
-    margin-left: 40px; /*da margem ao elemento, ele deixar separado em 40px*/
+    position: relative;
+    /* deixa o elemento limitado dentro do elemento pai, nesse caso ele ficara limitado dentro do elemento com classe navigation*/
+    font-size: 1.1em;
+    /*tamanho da fonte*/
+    color: blueviolet;
+    /*cor do elemento*/
+    text-decoration: none;
+    /*sem nenhum tipo de linha/sublinhado no texto */
+    font-weight: 500;
+    /*igual a negrito, quanto maior o número mais negrito na fonte*/
+    margin-left: 40px;
+    /*da margem ao elemento, ele deixar separado em 40px*/
 }
 
 .navigation a::after {
@@ -68,13 +85,19 @@ header{  /*cabeçalho*/
     height: 50px;
     background: transparent;
     border: 2px solid #fff;
-    outline: none; /*serve para pintar a margem da borda*/
-    border-radius: 6px; /*deixa a quina/borda aredondada*/
-    cursor: pointer; /* estiliza o cursor*/
-    font-size: 1.1em; /* tamanho da fonte deste elemento*/
+    outline: none;
+    /*serve para pintar a margem da borda*/
+    border-radius: 6px;
+    /*deixa a quina/borda aredondada*/
+    cursor: pointer;
+    /* estiliza o cursor*/
+    font-size: 1.1em;
+    /* tamanho da fonte deste elemento*/
     color: #fff;
-    font-weight: 500;/*igual a negrito, quanto maior o número mais negrito na fonte*/
-    margin-left: 40px;/*da margem ao elemento, ele deixar separado em 40px*/
+    font-weight: 500;
+    /*igual a negrito, quanto maior o número mais negrito na fonte*/
+    margin-left: 40px;
+    /*da margem ao elemento, ele deixar separado em 40px*/
     transition: .5s;
 }
 
@@ -82,4 +105,58 @@ header{  /*cabeçalho*/
 .navigation .btnLogin-popup:hover {
     background: #fff;
     color: #162938;
+}
+
+
+.wrapper {
+    /*background fosco da tela de login*/
+    position: relative;
+    width: 1294px;
+    height: 728px;
+    background: transparent;
+    background: rgba(0, 35, 219, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: -80px 80px 100px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(30px);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.wrapper .form-box {
+    /*formulario senha e login*/
+    left: 20%;
+    position: relative;
+    width: 354px;
+    height: 482px;
+    border: 1px solid blue;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: tomato;
+    text-align: center;
+}
+
+.input-box{ /*campo de login e senha digitação*/
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 65px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
 }
