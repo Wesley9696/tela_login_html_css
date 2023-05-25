@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Wix+Madefor+Display:wght@400;500;600&family=Wix+Madefor+Text:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Wix+Madefor+Display:wght@400;500;600&family=Wix+Madefor+Text:wght@400;500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
     font-family: 'Wix Madefor Display', sans-serif;
-    font-family: 'Wix Madefor Text', sans-serif;
+
 }
 
 body {
@@ -122,7 +121,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    background: url(img/EfeitoFosco.png);
 }
 
 .wrapper .form-box {
@@ -135,28 +134,101 @@ header {
 }
 
 .form-box h2 {
-    font-size: 2em;
-    color: tomato;
+    font-size: 3em;
+    /* igual 48px*/
+    color: #313056;
     text-align: center;
+    margin-bottom: 84px;
+    font-weight: 100;
+    letter-spacing: 8px;
 }
 
-.input-box{ /*campo de login e senha digitação*/
+.input-box {
+    /*campo de login e senha digitação*/
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
+    margin-top: 60px;
     background: rgba(255, 255, 255, 0.3);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 65px;
+    border: 1px solid red
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #162938;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -15px;
+}
+
+
+
+.input-box input {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    right: 0px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: relative;
+    left: 20px;
+    top: 15%;
+    color: #162938;
+}
+
+
+.form-box button {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 231px;
+    height: 65px;
+    cursor: pointer;
+    background: #29294F;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.15);
     border-radius: 65px;
 }
 
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none;
+.btn {
+    width: 231px;
+    height: 65px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    letter-spacing: 8px;
+    /*font-size: 2em;   (2em = 32px)*/
+    color: #fff;
+    user-select: none;
+    font-weight: 990;
+}
+
+.remember-forgot {
+    margin-top: 32.93;
+    text-align: center;
+}
+
+.redes_registro {
+    display: block;
+    align-items: center;
+    margin: 10px 0px;
+    border: 1px solid orange
 }
