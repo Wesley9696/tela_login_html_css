@@ -151,7 +151,7 @@ header {
     margin: 30px 0;
     margin-top: 60px;
     background: rgba(255, 255, 255, 0.3);
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.40);
     border-radius: 65px;
     border: 1px solid red
 }
@@ -201,12 +201,10 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 231px;
-    height: 65px;
     cursor: pointer;
     background: #29294F;
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 65px;
+    border-radius: 100px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.60);
 }
 
 .btn {
@@ -226,9 +224,32 @@ header {
     text-align: center;
 }
 
-.redes_registro {
-    display: block;
+.wrapper .form-box .redes_registro {
+    position: relative;
     align-items: center;
-    margin: 10px 0px;
-    border: 1px solid orange
+    margin: 20px 80px;
+} 
+
+.redes_registro a {
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+    border-color: none;
+    border-style: none;
+    display: inline-block    
+}
+
+#tiktok {
+    border-radius: 100px;
+    margin-right: 43px;    
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.60);
+}
+#facebook {
+    border-radius: 100px;
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.60);  
+}
+#twitter {
+    border-radius: 100px;
+    margin-left: 43px; 
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.60);
 }
