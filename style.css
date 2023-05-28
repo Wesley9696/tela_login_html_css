@@ -26,7 +26,6 @@ header {
     /*100% da tela horizontal*/
     padding: 20px 100px;
     /*tamanho que ocupa*/
-    background: red;
     display: flex;
     /* como um ítem será posicionado para no espaço disponível dentro de seu container*/
     justify-content: space-between;
@@ -35,6 +34,7 @@ header {
     /*alinha o elemento ao centro do seu countainer*/
     z-index: 99;
     /* 99 faz com que esse elemento fique proximo da tela. z-index: 99;*/
+    
 }
 
 .logo {
@@ -43,22 +43,23 @@ header {
     color: blueviolet;
     user-select: none;
     /*faz com que o usuario não consiga selecionar texto nenhum desse elemento*/
-}
-
-.navigation a {
-    position: relative;
+    
+} 
+ 
+/* .navigation a {
+     position: relative;
     /* deixa o elemento limitado dentro do elemento pai, nesse caso ele ficara limitado dentro do elemento com classe navigation*/
-    font-size: 1.1em;
+   /* font-size: 1.1em; 
     /*tamanho da fonte*/
-    color: blueviolet;
+   /* color: blueviolet;
     /*cor do elemento*/
-    text-decoration: none;
+   /* text-decoration: none;
     /*sem nenhum tipo de linha/sublinhado no texto */
-    font-weight: 500;
+   /*/* font-weight: 500;
     /*igual a negrito, quanto maior o número mais negrito na fonte*/
-    margin-left: 40px;
+   /* margin-left: 40px;
     /*da margem ao elemento, ele deixar separado em 40px*/
-}
+/* }  */
 
 .navigation a::after {
     content: '';
@@ -79,7 +80,7 @@ header {
     transform: scaleX(1);
 }
 
-.navigation .btnLogin-popup {
+.wrapper .btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -97,7 +98,14 @@ header {
     /*igual a negrito, quanto maior o número mais negrito na fonte*/
     margin-left: 40px;
     /*da margem ao elemento, ele deixar separado em 40px*/
+    position: relative;
     transition: .5s;
+    margin-top: 30px;
+    display: block;
+    cursor: pointer;
+    background: #29294F;
+    border-radius: 100px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.60);
 }
 
 
