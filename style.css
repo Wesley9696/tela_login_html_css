@@ -12,8 +12,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     background: url(img/fundo_ball_colors.jpg);
+    background-size: cover;
 }
 
 header {
@@ -34,7 +36,7 @@ header {
     /*alinha o elemento ao centro do seu countainer*/
     z-index: 99;
     /* 99 faz com que esse elemento fique proximo da tela. z-index: 99;*/
-    
+
 }
 
 .logo {
@@ -43,23 +45,28 @@ header {
     color: blueviolet;
     user-select: none;
     /*faz com que o usuario não consiga selecionar texto nenhum desse elemento*/
-    
-} 
- 
+}
+
 /* .navigation a {
      position: relative;
     /* deixa o elemento limitado dentro do elemento pai, nesse caso ele ficara limitado dentro do elemento com classe navigation*/
-   /* font-size: 1.1em; 
+/* font-size: 1.1em; 
     /*tamanho da fonte*/
-   /* color: blueviolet;
+/* color: blueviolet;
     /*cor do elemento*/
-   /* text-decoration: none;
+/* text-decoration: none;
     /*sem nenhum tipo de linha/sublinhado no texto */
-   /*/* font-weight: 500;
+/*/* font-weight: 500;
     /*igual a negrito, quanto maior o número mais negrito na fonte*/
-   /* margin-left: 40px;
+/* margin-left: 40px;
     /*da margem ao elemento, ele deixar separado em 40px*/
 /* }  */
+
+.countainer_1_2,
+.wrapper1,
+.wrapper2 {
+    float: left;
+}
 
 .navigation a::after {
     content: '';
@@ -75,12 +82,90 @@ header {
     transition: transform .5s;
 }
 
+.wrapper1 {
+    width: 428px;
+    height: 728px;
+    border-radius: 30px 0 0 30px;
+    background: linear-gradient(193.5deg, #FFFFFF 6.56%, rgba(255, 255, 255, 0) 99.28%, rgba(217, 217, 217, 0.1) 99.29%);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.form-box_login_1 {
+    /*formulario senha e login*/
+    margin: 110px 50px 0 50px;
+    /* 143 pixels para a parte superior TOP, uma margem de 60 pixels para a direita right, uma margem de 50 pixels para a parte inferior BUTTOM e uma margem de 328 pixels para a esquerda. */
+    position: relative;
+    width: 328px;
+    height: 490px;
+    align-items: center;
+    color: #313056;
+    border: 2px solid yellow;
+}
+
+.form-box_login_1 btnLogin-popup {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.form-box_login_1 h1 {
+    text-align: center;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+    
+    letter-spacing: 0.1em;
+}
+
+.form-box_login_1 h2 {
+    position: relative;
+    margin-top: 150px;
+    font-weight: 1000;
+    font-size: 45px;
+    line-height: 55px;
+    color: #313056;
+}
+
+.btnLogin-popup {
+    margin-top: 80px;
+    margin-right: 10px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: #313056;
+    width: 265px;
+    height: 56px;
+    background: linear-gradient(93.58deg, rgba(255, 255, 255, 0.72) 19.82%, rgba(255, 255, 255, 0) 95.52%);border: 0px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.40);
+    border-radius: 65px;
+
+}
+
+.wrapper1 .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.hr1 {
+    margin: 95px 1px;
+    position: absolute;
+    width: 132px;
+    left: 1px;
+    top: 180px;
+    border: 2px solid #29294F;
+}
+
 .navigation a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
 
-.wrapper .btnLogin-popup {
+.wrapper2 .btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -106,42 +191,77 @@ header {
     background: #29294F;
     border-radius: 100px;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.60);
+
 }
 
 
-.navigation .btnLogin-popup:hover {
-    background: #fff;
-    color: #162938;
+.logar-sup {
+    width: 235px;
+    height: 65px;
+    background: linear-gradient(91.14deg, rgba(255, 255, 255, 0.32) -37.57%, rgba(255, 255, 255, 0) 128.93%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(-10px 10px 20px rgba(0, 0, 0, 0.2));
+    border-radius: 65px;
 }
 
 
-.wrapper {
+.wrapper2 {
     /*background fosco da tela de login*/
     position: relative;
-    width: 1294px;
+    width: 866px;
     height: 728px;
+    /*background fosco da tela de login*/
     background: transparent;
     background: rgba(0, 35, 219, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: -80px 80px 100px rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(30px);
-    border-radius: 30px;
+    border-radius: 0 30px 30px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     background: url(img/EfeitoFosco.png);
+
 }
 
-.wrapper .form-box {
-    /*formulario senha e login*/
-    left: 20%;
+.wrapper2 .logar-sup {
+    position: absolute;
+    width: 235px;
+    height: 65px;
+    left: 580px;
+    top: 25px;
+    background: linear-gradient(91.14deg, rgba(255, 255, 255, 0.32) -37.57%, rgba(255, 255, 255, 0) 128.93%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(-10px 10px 20px rgba(0, 0, 0, 0.2));
+    border-radius: 65px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.40);
+
+}
+
+
+.logar-sup {
     position: relative;
-    width: 354px;
-    height: 482px;
-    border: 1px solid blue;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: #313056;
 }
 
-.form-box h2 {
+
+.wrapper2 .form-box_login_2 {
+    /*formulario senha e login*/
+    margin: 110px 256px 0 256px;
+    /* 143 pixels para a parte superior TOP, uma margem de 328 pixels para a direita right, uma margem de 50 pixels para a parte inferior BUTTOM e uma margem de 328 pixels para a esquerda. */
+    position: relative;
+    width: 328px;
+    height: 482px;
+    align-items: center;
+    border: 2px solid orangered;
+}
+
+
+.form-box_login_2 h2 {
     font-size: 3em;
     /* igual 48px*/
     color: #313056;
@@ -149,6 +269,7 @@ header {
     margin-bottom: 84px;
     font-weight: 100;
     letter-spacing: 8px;
+
 }
 
 .input-box {
@@ -161,7 +282,8 @@ header {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.40);
     border-radius: 65px;
-    border: 1px solid red
+    letter-spacing: 0.3em;
+
 }
 
 .input-box label {
@@ -180,8 +302,6 @@ header {
     top: -15px;
 }
 
-
-
 .input-box input {
     position: absolute;
     width: 80%;
@@ -194,6 +314,7 @@ header {
     color: #162938;
     font-weight: 600;
     padding: 0 35px 0 5px;
+
 }
 
 .input-box .icon {
@@ -203,16 +324,18 @@ header {
     color: #162938;
 }
 
-
-.form-box button {
-    margin-top: 30px;
+.form-box_login_2 button {
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     background: #29294F;
-    border-radius: 100px;
+    border-radius: 65px;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.60);
+    border: 1.5px solid #29294F;
 }
 
 .btn {
@@ -232,11 +355,14 @@ header {
     text-align: center;
 }
 
-.wrapper .form-box .redes_registro {
-    position: relative;
-    align-items: center;
-    margin: 20px 80px;
-} 
+.login-register {
+    text-align: center;
+}
+
+.wrapper2 .form-box_login_2 .redes_registro {
+    text-align: center;
+    margin-top: 20px;
+}
 
 .redes_registro a {
     width: 30px;
@@ -244,20 +370,22 @@ header {
     border-width: 1px;
     border-color: none;
     border-style: none;
-    display: inline-block    
+    display: inline-block
 }
 
 #tiktok {
     border-radius: 100px;
-    margin-right: 43px;    
-    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.60);
+    margin-right: 43px;
+    box-shadow: -5px 8px 20px rgba(0, 0, 0, 0.60);
 }
+
 #facebook {
     border-radius: 100px;
-    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.60);  
+    box-shadow: -5px 8px 20px rgba(0, 0, 0, 0.60);
 }
+
 #twitter {
     border-radius: 100px;
-    margin-left: 43px; 
-    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.60);
+    margin-left: 43px;
+    box-shadow: -5px 8px 20px rgba(0, 0, 0, 0.60);
 }
