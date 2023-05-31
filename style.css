@@ -81,6 +81,15 @@ header {
     float: left;
 }
 
+
+.countainer_1_2 {
+    background: url(img/EfeitoFosco.png);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    box-shadow: -80px 80px 100px rgba(0, 0, 0, 0.35);
+}
+
+
 .navigation a::after {
     content: '';
     position: absolute;
@@ -99,13 +108,13 @@ header {
     width: 428px;
     height: 728px;
     border-radius: 30px 0 0 30px;
-    display: flex;
-    justify-content: center;
-    background: url(img/Vector.png);
-    
+    background: linear-gradient(193.5deg, #FFFFFF 6.56%, rgba(255, 255, 255, 0) 99.28%, rgba(217, 217, 217, 0.1) 99.29%);
 }
 
-
+.btn-att {
+    margin-top: 300px;
+    margin-left: -50px;
+}
 
 .form-box_login_1 {
     /*formulario senha e login*/
@@ -147,7 +156,7 @@ header {
 }
 
 .btnLogin-popup {
-    margin-top: 80px;
+    margin-top: 110px;
     margin-right: 10px;
     margin-left: 30px;
     font-weight: 700;
@@ -159,10 +168,12 @@ header {
     height: 56px;
     background: linear-gradient(93.58deg, rgba(255, 255, 255, 0.72) 19.82%, rgba(255, 255, 255, 0) 95.52%);
     border: 0px solid rgba(255, 255, 255, 0.1);
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.40);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 65px;
 
 }
+
+
 
 .wrapper1 .btnLogin-popup:hover {
     background: #fff;
@@ -234,14 +245,13 @@ header {
     /*background fosco da tela de login*/
     background: transparent;
     background: rgba(0, 35, 219, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: -80px 80px 100px rgba(0, 0, 0, 0.35);
+
     backdrop-filter: blur(30px);
     border-radius: 0 30px 30px 0;
     display: flex;
     justify-content: center;
     background: url(img/EfeitoFosco.png);
-
+    border-radius: 0px 30px 30px 0px;
 }
 
 .wrapper2 .logar-sup {
@@ -254,7 +264,8 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.1);
     filter: drop-shadow(-10px 10px 20px rgba(0, 0, 0, 0.2));
     border-radius: 65px;
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.40);
+    box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -300,7 +311,7 @@ header {
     margin: 30px 0;
     margin-top: 60px;
     background: rgba(255, 255, 255, 0.3);
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.40);
+    box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.2);
     border-radius: 65px;
     letter-spacing: 0.3em;
 
@@ -315,7 +326,6 @@ header {
     color: #162938;
     pointer-events: none;
     transition: .5s;
-
 }
 
 .input-box input:focus~label,
@@ -404,16 +414,16 @@ header {
 #tiktok {
     border-radius: 100px;
     margin-right: 43px;
-    box-shadow: -5px 8px 20px rgba(0, 0, 0, 0.60);
+    box-shadow: -1px 8px 20px rgba(0, 0, 0, 0.40);
 }
 
 #facebook {
     border-radius: 100px;
-    box-shadow: -5px 8px 20px rgba(0, 0, 0, 0.60);
+    box-shadow: -1px 8px 20px rgba(0, 0, 0, 0.40);
 }
 
 #twitter {
     border-radius: 100px;
     margin-left: 43px;
-    box-shadow: -5px 8px 20px rgba(0, 0, 0, 0.60);
+    box-shadow: -1px 8px 20px rgba(0, 0, 0, 0.40);
 }
