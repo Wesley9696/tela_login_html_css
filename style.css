@@ -1,10 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Wix+Madefor+Display:wght@400;500;600&family=Wix+Madefor+Text:wght@400;500&display=swap');
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('fontes/CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothicBold';
+    src: url('fontes/CenturyGothicBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'CenturyGothic', sans-serif;
 
 }
 
@@ -86,9 +99,13 @@ header {
     width: 428px;
     height: 728px;
     border-radius: 30px 0 0 30px;
-    background: linear-gradient(193.5deg, #FFFFFF 6.56%, rgba(255, 255, 255, 0) 99.28%, rgba(217, 217, 217, 0.1) 99.29%);
-    border-radius: 30px 0px 0px 30px;
+    display: flex;
+    justify-content: center;
+    background: url(img/Vector.png);
+    
 }
+
+
 
 .form-box_login_1 {
     /*formulario senha e login*/
@@ -99,7 +116,6 @@ header {
     height: 490px;
     align-items: center;
     color: #313056;
-    border: 2px solid yellow;
 }
 
 .form-box_login_1 btnLogin-popup {
@@ -109,24 +125,25 @@ header {
 
 
 .form-box_login_1 h1 {
+    font-family: 'CenturyGothic';
     text-align: center;
     position: relative;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 59px;
-    /* identical to box height */
-    
     letter-spacing: 0.1em;
 }
 
 .form-box_login_1 h2 {
+    font-family: 'CenturyGothicBold';
     position: relative;
     margin-top: 150px;
     font-weight: 1000;
     font-size: 45px;
     line-height: 55px;
     color: #313056;
+    letter-spacing: 0.1em;
 }
 
 .btnLogin-popup {
@@ -134,13 +151,14 @@ header {
     margin-right: 10px;
     margin-left: 30px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3em;
     color: #313056;
     width: 265px;
     height: 56px;
-    background: linear-gradient(93.58deg, rgba(255, 255, 255, 0.72) 19.82%, rgba(255, 255, 255, 0) 95.52%);border: 0px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(93.58deg, rgba(255, 255, 255, 0.72) 19.82%, rgba(255, 255, 255, 0) 95.52%);
+    border: 0px solid rgba(255, 255, 255, 0.1);
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.40);
     border-radius: 65px;
 
@@ -196,12 +214,15 @@ header {
 
 
 .logar-sup {
+    font-family: 'CenturyGothicBold';
     width: 235px;
     height: 65px;
+    font-size: 24px;
     background: linear-gradient(91.14deg, rgba(255, 255, 255, 0.32) -37.57%, rgba(255, 255, 255, 0) 128.93%);
     border: 1px solid rgba(255, 255, 255, 0.1);
     filter: drop-shadow(-10px 10px 20px rgba(0, 0, 0, 0.2));
     border-radius: 65px;
+    letter-spacing: 0.1em;
 }
 
 
@@ -257,7 +278,6 @@ header {
     width: 328px;
     height: 482px;
     align-items: center;
-    border: 2px solid orangered;
 }
 
 
@@ -295,6 +315,7 @@ header {
     color: #162938;
     pointer-events: none;
     transition: .5s;
+
 }
 
 .input-box input:focus~label,
@@ -339,10 +360,12 @@ header {
 }
 
 .btn {
+    font-family: 'CenturyGothicBold';
     width: 231px;
     height: 65px;
     margin-bottom: 15px;
     font-size: 1.5em;
+    /* 24px convertido */
     letter-spacing: 8px;
     /*font-size: 2em;   (2em = 32px)*/
     color: #fff;
@@ -353,10 +376,15 @@ header {
 .remember-forgot {
     margin-top: 32.93;
     text-align: center;
+    font-family: 'CenturyGothic';
+    font-style: normal;
+    font-size: 18px;
+    color: #313056;
 }
 
 .login-register {
     text-align: center;
+
 }
 
 .wrapper2 .form-box_login_2 .redes_registro {
