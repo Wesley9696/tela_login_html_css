@@ -229,7 +229,6 @@ header {
     justify-content: center;
     background: url(img/EfeitoFosco.png);
     border-radius: 0px 30px 30px 0px;
-    
 }
 
 .wrapper2 .logar-sup {
@@ -237,18 +236,15 @@ header {
     width: 235px;
     height: 65px;
     left: 580px;
-    top: 25px;
     background: linear-gradient(91.14deg, rgba(255, 255, 255, 0.32) -37.57%, rgba(255, 255, 255, 0) 128.93%);
     border: 1px solid rgba(255, 255, 255, 0.1);
     filter: drop-shadow(-10px 10px 20px rgba(0, 0, 0, 0.2));
     border-radius: 65px;
     box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.2);
-
-
 }
 
 .cadastro{
-    margin-top: 156px;
+    margin-top: 126px;
     margin-bottom: -11px;
    
 }
@@ -270,25 +266,23 @@ header {
     width: 865px;  /* largura */
     height: 726px;  /* altura */
     align-items: center;
-    border:1px solid red;
 }
 
 
 .form-box_login_2 h2 {
-    font-size: 3em;
+    font-size: 48px;
     /* igual 48px*/
     color: #313056;
     text-align: center;
     font-weight: 100;
     letter-spacing: 8px;
-
+    margin-bottom: 42px;
 }
 
 .areaUseremail {
     display: block;
-    margin: auto 0;
-    border: 1px solid yellow;
-    margin-top: 75px;
+    margin-top: 70px;
+    
 }
 
 .input-box {
@@ -298,7 +292,7 @@ header {
     width: 354px;
     height: 51.13px;
     margin: 0 auto; /* dizemos ao navegador que as margens superior e inferior são iguais a 0 e as da esquerda e direita são automáticas */
-    margin-top: 60px;
+    margin-top: 24px;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.2);
     border-radius: 65px;
@@ -372,12 +366,13 @@ header {
 }
 
 .remember-forgot {
-    margin-top: 32.93;
+    margin-top: 32.93px;
     text-align: center;
     font-family: 'CenturyGothic';
     font-style: normal;
     font-size: 18px;
     color: #313056;
+    
 }
 
 .login-register {
